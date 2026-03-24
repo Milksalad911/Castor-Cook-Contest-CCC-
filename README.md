@@ -1,25 +1,26 @@
 # 🍔 Castor Cook Contest
 
-Interactieve website voor de **Castor Cook Contest**.  
-Bezoekers kunnen tickets kopen als toeschouwer of deelnemen aan de kookwedstrijd.  
-Deelnemers maken kans op een nieuwe barbecue.
+Interactive ticket website for the **Castor Cook Contest**.  
+Visitors can join as a spectator or participate in the cooking competition.
+
+Participants have a chance to win a brand new barbecue.
 
 ---
 
 ## 🎟️ Tickets
 
-- **Toeschouwer** – €2  
-- **Meedoen** – €10  
+- **Spectator** — €2  
+- **Participant** — €10  
 
 ---
 
-## 🌐 Live website
+## 🌐 Live
 
-[Bezoek de site](https://Milksalad911.github.io/Castor-Cook-Contest-CCC-/)
+👉 https://milksalad911.github.io/Castor-Cook-Contest-CCC-/
 
 ---
 
 ## ⚠️ Disclaimer
 
-Deze website bevat een **nep-betaalsysteem** en is uitsluitend voor demonstratie- en educatieve doeleinden.  
-Er worden geen echte betalingen verwerkt.
+This project uses a **fake payment system** and is intended for demonstration purposes only.  
+No real payments are processed.
