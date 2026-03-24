@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Castor Cook Contest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ff9966, #ff5e62);
+      text-align: center;
+      color: white;
+      margin: 0;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 50px;
+      margin-top: 40px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      color: black;
+      padding: 20px;
+      border-radius: 15px;
+      width: 250px;
+    }
+
+    button {
+      background: #ff5e62;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .payment {
+      display: none;
+      margin-top: 30px;
+      background: white;
+      color: black;
+      padding: 20px;
+      border-radius: 15px;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    input {
+      width: 90%;
+      padding: 8px;
+      margin: 5px;
+    }
+
+    .winner-box {
+      display: none;
+      background: white;
+      color: black;
+      padding: 20px;
+      border-radius: 15px;
+      width: 300px;
+      margin: 40px auto;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Castor Cook Contest</h1>
+
+<div class="container">
+  <div class="card">
+    <h2>Toeschouwer</h2>
+    <p>€2</p>
+    <p>Je kijkt naar de kook contest</p>
+    <button onclick="startBetaling('Toeschouwer - €2')">Koop ticket</button>
+  </div>
+
+  <div class="card">
+    <h2>Meedoen</h2>
+    <p>€10</p>
+    <p>Je doet mee en neemt je eigen barbecue mee</p>
+    <button onclick="startBetaling('Meedoen - €10')">Koop ticket</button>
+  </div>
+</div>
+
+<div class="payment" id="paymentBox">
+  <h3>Betalen</h3>
+  <p id="product"></p>
+  <input placeholder="Naam op kaart"><br>
+  <input placeholder="Kaartnummer"><br>
+  <input placeholder="MM/JJ"><br>
+  <input placeholder="CVC"><br><br>
+  <button onclick="betaal()">Betaal</button>
+</div>
+
+<p id="resultaat"></p>
+
+<br>
+<button onclick="toonWinnaar()">🎉 Trek winnaar</button>
+
+<div class="winner-box" id="winnerBox">
+  <h2>🏆 Winnaar</h2>
+  <h3 id="winnaarNaam"></h3>
+  <p>🔥 Wint een nieuwe barbecue!</p>
+</div>
+
+<script>
+function startBetaling(product) {
+  document.getElementById("paymentBox").style.display = "block";
+  document.getElementById("product").innerText = product;
+}
+
+function betaal() {
+  document.getElementById("paymentBox").style.display = "none";
+  document.getElementById("resultaat").innerText = "✅ Bedankt voor je aankoop!";
+}
+
+function toonWinnaar() {
+  const namen = ["Jan", "Emma", "Liam", "Sophie", "Noah", "Julia"];
+  const winnaar = namen[Math.floor(Math.random() * namen.length)];
+
+  document.getElementById("winnerBox").style.display = "block";
+  document.getElementById("winnaarNaam").innerText = winnaar;
+}
+</script>
+
+</body>
+</html>
