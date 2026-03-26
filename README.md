@@ -1,9 +1,7 @@
 # 🍔 Castor Cook Contest
 
-Interactieve ticketwebsite voor de **Castor Cook Contest**.  
-Bezoekers kunnen een ticket kopen als toeschouwer of deelnemen aan de kookwedstrijd.
-
-Deelnemers maken kans op het winnen van een nieuwe barbecue.
+Website voor de **Castor Cook Contest**.  
+Bezoekers kunnen tickets kopen en informatie bekijken over het evenement.
 
 ---
 
@@ -11,6 +9,13 @@ Deelnemers maken kans op het winnen van een nieuwe barbecue.
 
 - **Toeschouwer** — €2  
 - **Deelnemer** — €10  
+
+---
+
+## 📅 Evenement
+
+De Castor Cook Contest vindt plaats op **23 april 2026**.  
+Deelnemers nemen hun eigen barbecue mee en krijgen de benodigde kookmaterialen ter plaatse.
 
 ---
 
